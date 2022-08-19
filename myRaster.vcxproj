@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -73,6 +73,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>D:\document\CODE\vs2019\openGL\myRaster\src\thirdParty;D:\document\CODE\vs2019\openGL\myRaster\src;D:\codeEnvironment\GLFW\glfw-3.3.2\include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\document\CODE\vs2019\openGL\myRaster\src\thirdParty;D:\document\CODE\vs2019\openGL\myRaster\src;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(ProjectDir)lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,7 +139,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\glad\glad.c" />
+    <ClCompile Include="src\Log.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Render.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\thirdParty\HDR\HDRLoader.cpp" />
     <ClCompile Include="src\thirdParty\imgui-docking\imgui.cpp" />
     <ClCompile Include="src\thirdParty\imgui-docking\imgui_demo.cpp" />
     <ClCompile Include="src\thirdParty\imgui-docking\imgui_draw.cpp" />
@@ -140,6 +151,23 @@
     <ClCompile Include="src\thirdParty\imgui-docking\imgui_impl_opengl3.cpp" />
     <ClCompile Include="src\thirdParty\imgui-docking\imgui_tables.cpp" />
     <ClCompile Include="src\thirdParty\imgui-docking\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\Model.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\Render.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\thirdParty\HDR\HDRLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\pbr.fs" />
+    <None Include="src\shaders\pbr.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
