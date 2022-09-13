@@ -1,0 +1,3735 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "已取消选中充当索引的枚举 source 的下限。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 8400,
+                  "startColumn": 5,
+                  "endLine": 8400,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInputSourceName",
+                  "decoratedName": "?GetInputSourceName@@YAPEBDW4ImGuiInputSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8396,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8398,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8398,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\n检查了枚举值 \"source\" 是否有上限边界。"
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8399,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8400,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“viewport”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 12999,
+                  "startColumn": 5,
+                  "endLine": 12999,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DestroyViewport",
+                  "decoratedName": "?DestroyViewport@ImGui@@YAXPEAUImGuiViewportP@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12983,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12986,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12987,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12989,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12990,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12986,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12987,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "“viewport”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12989,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12990,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12984,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "退出此循环(“window_n<g.Windows.Size”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12992,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12997,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "“viewport”是“ImGui::DestroyPlatformWindow”的输入/输出参数(在 d:\\document\\code\\vs2019\\opengl\\myraster\\src\\thirdparty\\imgui-docking\\imgui_internal.h:2760 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12998,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12999,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此循环(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 12999,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“viewport”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“window->Viewport”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 13127,
+                  "startColumn": 13,
+                  "endLine": 13127,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13007,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13008,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13009,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13012,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13013,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13018,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13021,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13027,
+                            "startColumn": 73
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13042,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13043,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13050,
+                            "startColumn": 53
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13057,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13062,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13066,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13070,
+                            "startColumn": 77
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13080,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "“window->Viewport”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13081,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13086,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“window->Viewport==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13087,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13091,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“!lock_viewport”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13093,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“flags”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13105,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13123,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13127,
+                            "startColumn": 56
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“window->Viewport”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“window”的引用。查看第 13008 行以找出可能会发生此情况的前一位置"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 13132,
+                  "startColumn": 5,
+                  "endLine": 13132,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13007,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13008,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13009,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13012,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13013,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13018,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13021,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13027,
+                            "startColumn": 73
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13042,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13043,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13050,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13057,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13062,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“flags”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13066,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "“window”是“ImGui::GetWindowAlwaysWantOwnViewport”的输入/输出参数(在第 1004 行中声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13066,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13070,
+                            "startColumn": 77
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13080,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13081,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13086,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“window->Viewport==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13087,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "“window”是“ImGui::UpdateTryMergeWindowIntoHostViewport”的输入/输出参数(在第 1002 行中声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13087,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13088,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "“window”是“ImGui::AddUpdateViewport”的输入/输出参数(在第 996 行中声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13091,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“!lock_viewport”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13093,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“flags”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13105,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13123,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13127,
+                            "startColumn": 56
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13132,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“window”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“node”的引用。查看第 14136 行以找出可能会发生此情况的前一位置"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14225,
+                  "startColumn": 9,
+                  "endLine": 14225,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockContextProcessDock",
+                  "decoratedName": "?DockContextProcessDock@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockRequest@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14098,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14099,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14101,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14102,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14104,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14105,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14106,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14107,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14113,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14114,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14115,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14127,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14129,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14133,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14135,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14136,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14137,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14138,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14146,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14147,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14158,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14160,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "“node”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14225,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“node”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“node->TabBar”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14452,
+                  "startColumn": 13,
+                  "endLine": 14452,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeAddWindow",
+                  "decoratedName": "?DockNodeAddWindow@ImGui@@YAXPEAUImGuiDockNode@@PEAUImGuiWindow@@_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14411,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14411,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14412,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14418,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14424,
+                            "startColumn": 61
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14427,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14428,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14429,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14430,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14431,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14432,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14436,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14449,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "“node->TabBar”可能为 NULL (进入此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14451,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14452,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“node->TabBar”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "取消对 NULL 指针的引用。“node”包含与“info->CentralNode”相同的 NULL 值。查看第 14625 行以找出可能会发生此情况的前一位置"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14639,
+                  "startColumn": 9,
+                  "endLine": 14639,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DockNodeFindInfo",
+                  "decoratedName": "?DockNodeFindInfo@@YAXPEAUImGuiDockNode@@PEAUImGuiDockNodeTreeInfo@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14625,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14631,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14633,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14634,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14635,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14637,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "“node”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14639,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“node->ChildNodes[0]”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14639,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“node”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“merge_lead_child”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 15928,
+                  "startColumn": 5,
+                  "endLine": 15928,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeTreeMerge",
+                  "decoratedName": "?DockNodeTreeMerge@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockNode@@1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15903,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15904,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15905,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15906,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "“merge_lead_child”可能为 NULL (进入此循环)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15907,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15914,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15915,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "“merge_lead_child”是“ImGui::DockNodeMoveChildNodes”的输入/输出参数(在第 13643 行中声明)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15916,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“child_0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15921,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“child_1”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15923,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15924,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15926,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15927,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15928,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“merge_lead_child”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“node”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16925,
+                  "startColumn": 9,
+                  "endLine": 16925,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16875,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16876,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16879,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16881,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16882,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16893,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16894,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16895,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16896,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16904,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16905,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "“node”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16907,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“window->DockId!=0&&node==0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16925,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“node”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "取消对 NULL 指针的引用。“window->DockNode”包含与“node”相同的 NULL 值。查看第 16925 行以找出可能会发生此情况的前一位置"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16996,
+                  "startColumn": 18,
+                  "endLine": 16996,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16875,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16876,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16879,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16881,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16882,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16893,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16894,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16895,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16896,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16904,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16905,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "“node”可能为 NULL (跳过此分支)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16907,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“window->DockId!=0&&node==0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16925,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16938,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16938,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16937,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16943,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“node->HostWindow==0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16953,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“!!((node->HostWindow))”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16954,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“!!((node->IsLeafNode()))”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16955,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16956,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16959,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16966,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16967,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16968,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16969,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16970,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16971,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16972,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“node->MergedFlags”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16976,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“node->VisibleWindow==window”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16980,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“<分支条件>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16981,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16982,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16985,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16989,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16992,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<分支条件>”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16996,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“node”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "\"_Param_(2)\" 可以是 \"0\"。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17477,
+                  "startColumn": 7,
+                  "endLine": 17477,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetPlatformImeDataFn_DefaultImpl",
+                  "decoratedName": "?SetPlatformImeDataFn_DefaultImpl@@YAXPEAUImGuiViewport@@PEAUImGuiPlatformImeData@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17469,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17471,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17474,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17477,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/document/CODE/vs2019/openGL/myRaster/src/thirdParty/imgui-docking/imgui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "bb19fced1ae76159d8317e65bc54bddba6d8dc5e1d1ca6da9e9c5b1f93e2a682"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/document/code/vs2019/opengl/myraster/src/thirdparty/imgui-docking/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "0d203e590e37b35bd774eed44bef2afe39ba0704b3b2c4ae09021c99d12265f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/document/code/vs2019/opengl/myraster/src/thirdparty/imgui-docking/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "8a772828d3cc4bb39e3b406d7e18b0329533446b176306be1b3c6a4569a43f40"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/document/code/vs2019/opengl/myraster/src/thirdparty/imgui-docking/imgui_internal.h"
+          },
+          "hashes": {
+            "sha-256": "4ca50ea05502ee4b2e104e47daab7afc299c7ad7508eaf06ffd548b4073a07eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/document/code/vs2019/opengl/myraster/src/thirdparty/imgui-docking/imstb_textedit.h"
+          },
+          "hashes": {
+            "sha-256": "686a603897d8ff024fd7dbc4bfe582ebb66b4581b89b084d69f899a9076847d2"
+          }
+        }
+      ]
+    }
+  ]
+}

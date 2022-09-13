@@ -1,9 +1,4 @@
 ﻿  Render.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
 D:\document\CODE\vs2019\openGL\myRaster\src\thirdParty\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
-D:\document\CODE\vs2019\openGL\myRaster\src\Render.cpp(53,81): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
-  main.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
-D:\document\CODE\vs2019\openGL\myRaster\src\thirdParty\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
-  正在生成代码...
   myRaster.vcxproj -> D:\document\CODE\vs2019\openGL\myRaster\x64\Debug\myRaster.exe

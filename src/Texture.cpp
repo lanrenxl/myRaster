@@ -21,10 +21,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include "Texture.h"
 #include "Log.h"
+#include "Texture.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb/stb_image.h>
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include <stb/stb_image_write.h>
 
 Texture::Texture(std::string texName, unsigned char* data, int w, int h, int c) : name(texName)
     , width(w)
@@ -39,14 +41,43 @@ Texture::Texture(std::string texName, unsigned char* data, int w, int h, int c) 
 bool Texture::LoadTexture(const std::string& filename)
 {
     name = filename;
-    components = 4;
-    unsigned char* data = stbi_load(filename.c_str(), &width, &height, NULL, components);
-    if (data == nullptr)
-        return false;
-    texData.resize(width * height * components);
-    std::copy(data, data + width * height * components, texData.begin());
+
+    glGenTextures(1, &texId);
+    glBindTexture(GL_TEXTURE_2D, texId);
+    // 为当前绑定的纹理对象设置环绕、过滤方式
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // 加载并生成纹理
+    int width, height, nrChannels;
+    unsigned char* data = stbi_load(filename.c_str(), &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        if (nrChannels == 4)
+        {
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        }
+        else if (nrChannels == 3)
+        {
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        }
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        RT_ERROR("Failed to load texture: {0}", filename);
+    }
+    stbi_write_png("test.png", width, height, nrChannels, data, 0);
     stbi_image_free(data);
     return true;
+}
+
+void Texture::bindGPU(int _texLoc)  // 将纹理绑定到对应的纹理单元
+{
+    glActiveTexture(GL_TEXTURE0 + _texLoc);
+    glBindTexture(GL_TEXTURE_2D, this->texId);
+    texLoc = _texLoc;
 }
 
 HDRMap::HDRMap(const std::string& fileName)
@@ -67,10 +98,4 @@ bool HDRMap::LoadHDRMap(const std::string& fileName)
         RT_ERROR("load hdr failed");
         return false;
     }
-    glGenTextures(1, &this->hdrTex);
-    glBindTexture(GL_TEXTURE_2D, this->hdrTex);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB32F, hdrRes.width, hdrRes.height, 0, GL_RGB, GL_FLOAT, hdrRes.cols);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glBindTexture(GL_TEXTURE_2D, 0);
 }

@@ -20,28 +20,28 @@
     <ClCompile Include="..\glad\glad.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_demo.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_demo.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_draw.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_draw.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_impl_glfw.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_impl_glfw.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_impl_opengl3.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_impl_opengl3.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_tables.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_tables.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\thirdParty\imgui-docking\imgui_widgets.cpp">
+    <ClCompile Include="src\thirdParty\imgui\imgui_widgets.cpp">
       <Filter>src\imgui</Filter>
     </ClCompile>
     <ClCompile Include="src\Render.cpp">
@@ -54,6 +54,21 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Material.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Quad.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,13 +89,25 @@
     <ClInclude Include="src\Light.h" />
     <ClInclude Include="src\thirdParty\HDR\HDRLoader.h" />
     <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\Object.h" />
+    <ClInclude Include="src\globel.h" />
+    <ClInclude Include="src\Transform.h" />
+    <ClInclude Include="src\Quad.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\shaders\pbr.fs">
+    <None Include="src\shaders\pbr.frag">
       <Filter>shaders</Filter>
     </None>
-    <None Include="src\shaders\pbr.vs">
+    <None Include="src\shaders\pbr.vert">
       <Filter>shaders</Filter>
     </None>
+    <None Include="src\shaders\hdr.vert" />
+    <None Include="src\shaders\hdr.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="asset\default.png">
+      <Filter>shaders</Filter>
+    </Image>
   </ItemGroup>
 </Project>
