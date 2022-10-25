@@ -141,6 +141,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\glad\glad.c" />
+    <ClCompile Include="src\DefferedScene.cpp" />
+    <ClCompile Include="src\IBL_HDR.cpp" />
     <ClCompile Include="src\Log.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Material.cpp" />
@@ -161,7 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\DefferedScene.h" />
     <ClInclude Include="src\globel.h" />
+    <ClInclude Include="src\IBL_HDR.h" />
     <ClInclude Include="src\Light.h" />
     <ClInclude Include="src\Log.h" />
     <ClInclude Include="src\Material.h" />
@@ -177,10 +181,22 @@
     <ClInclude Include="src\Transform.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\shaders\IBL_brdfLut.frag" />
+    <None Include="src\shaders\defferGbuffer.frag" />
+    <None Include="src\shaders\defferGbuffer.vert" />
+    <None Include="src\shaders\defferHDR.frag" />
+    <None Include="src\shaders\defferHDR.vert" />
+    <None Include="src\shaders\defferShading.frag" />
+    <None Include="src\shaders\defferShading.vert" />
+    <None Include="src\shaders\IBL_brdfLut.vert" />
+    <None Include="src\shaders\IBL_cubemap.vert" />
+    <None Include="src\shaders\IBL_diffuseIrradiance.frag" />
     <None Include="src\shaders\hdr.frag" />
     <None Include="src\shaders\hdr.vert" />
+    <None Include="src\shaders\IBL_hdrToCubemap.frag" />
     <None Include="src\shaders\pbr.frag" />
     <None Include="src\shaders\pbr.vert" />
+    <None Include="src\shaders\IBL_specularPrefilter.frag" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="asset\default.png" />

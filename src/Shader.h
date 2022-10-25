@@ -65,9 +65,9 @@ class Shader
 {
 public:
     unsigned int ID;
-    std::string &vertexCode;
-    std::string &fragmentCode;
-    std::string &geometryCode;
+    std::string vertexCode;
+    std::string fragmentCode;
+    std::string geometryCode;
     // constructor generates the shader on the fly
     // ------------------------------------------------------------------------
     Shader(std::string& _vertexCode, std::string& _fragmentCode, std::string& _geometryCode)
@@ -75,6 +75,22 @@ public:
     {
         buildProgram();
     }
+
+    Shader(ShaderSource& shaderSource)
+        : vertexCode(shaderSource.vertexCode), fragmentCode(shaderSource.fragmentCode), geometryCode(shaderSource.geometryCode)
+    {
+        buildProgram();
+    }
+
+    Shader(const std::string& vertPath, const std::string& fragPath)
+    {
+        ShaderSource ss = ShaderSource(vertPath.c_str(), fragPath.c_str());
+        vertexCode = ss.vertexCode;
+        fragmentCode = ss.fragmentCode;
+        geometryCode = "";
+        buildProgram();
+    }
+
     void buildProgram()
     {
         const char* vShaderCode = vertexCode.c_str();

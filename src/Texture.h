@@ -2,9 +2,9 @@
 #define TEXTURE_H
 
 #include <glad/glad.h>
-#include <iostream>
+
 #include <vector>
-#include <algorithm>
+#include <string>
 #include <HDR/HDRLoader.h>
 
 class Texture
@@ -26,14 +26,6 @@ public:
     int texLoc; // GL_TEXTURE0 ~ 32;
 };
 
-class HDRMap
-{
-public:
-    HDRMap(const std::string& fileName);
 
-    bool LoadHDRMap(const std::string& fileName);
-
-    HDRLoaderResult hdrRes;
-};
 
 #endif // !TEXTURE_H

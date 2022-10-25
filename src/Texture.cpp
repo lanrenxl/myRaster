@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include "Log.h"
+
 #include "Texture.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb/stb_image.h>
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include <stb/stb_image_write.h>
+#include "Log.h"
 
 Texture::Texture(std::string texName, unsigned char* data, int w, int h, int c) : name(texName)
     , width(w)
@@ -68,7 +67,6 @@ bool Texture::LoadTexture(const std::string& filename)
     {
         RT_ERROR("Failed to load texture: {0}", filename);
     }
-    stbi_write_png("test.png", width, height, nrChannels, data, 0);
     stbi_image_free(data);
     return true;
 }
@@ -78,24 +76,4 @@ void Texture::bindGPU(int _texLoc)  // 将纹理绑定到对应的纹理单元
     glActiveTexture(GL_TEXTURE0 + _texLoc);
     glBindTexture(GL_TEXTURE_2D, this->texId);
     texLoc = _texLoc;
-}
-
-HDRMap::HDRMap(const std::string& fileName)
-{
-    LoadHDRMap(fileName);
-}
-
-bool HDRMap::LoadHDRMap(const std::string& fileName)
-{
-    bool r = HDRLoader::load(fileName.c_str(), hdrRes);
-    if (r)
-    {
-        RT_INFO("load hdr success!");
-        return true;
-    }
-    else
-    {
-        RT_ERROR("load hdr failed");
-        return false;
-    }
 }

@@ -1,8 +1,7 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 #include <glm/glm.hpp>
-#include <memory>
-#include "Texture.h"
+#include <string>
 
 // 基础PBR材质类
 class Material

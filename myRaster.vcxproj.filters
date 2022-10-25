@@ -71,6 +71,12 @@
     <ClCompile Include="src\Quad.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\DefferedScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IBL_HDR.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Render.h">
@@ -94,6 +100,8 @@
     <ClInclude Include="src\globel.h" />
     <ClInclude Include="src\Transform.h" />
     <ClInclude Include="src\Quad.h" />
+    <ClInclude Include="src\DefferedScene.h" />
+    <ClInclude Include="src\IBL_HDR.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\pbr.frag">
@@ -104,6 +112,18 @@
     </None>
     <None Include="src\shaders\hdr.vert" />
     <None Include="src\shaders\hdr.frag" />
+    <None Include="src\shaders\defferGbuffer.vert" />
+    <None Include="src\shaders\defferGbuffer.frag" />
+    <None Include="src\shaders\defferShading.frag" />
+    <None Include="src\shaders\defferShading.vert" />
+    <None Include="src\shaders\defferHDR.vert" />
+    <None Include="src\shaders\defferHDR.frag" />
+    <None Include="src\shaders\IBL_hdrToCubemap.frag" />
+    <None Include="src\shaders\IBL_diffuseIrradiance.frag" />
+    <None Include="src\shaders\IBL_specularPrefilter.frag" />
+    <None Include="src\shaders\IBL_brdfLut.frag" />
+    <None Include="src\shaders\IBL_cubemap.vert" />
+    <None Include="src\shaders\IBL_brdfLut.vert" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="asset\default.png">

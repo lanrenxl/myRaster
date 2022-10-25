@@ -7,6 +7,11 @@ in vec3 Normal;
 // lights
 uniform int lightNum;
 uniform samplerBuffer lights;
+uniform samplerCube irradianceMap;
+uniform samplerCube prefilterMap;
+uniform sampler2D lutMap;
+
+#define uniformTex
 
 // material parameters
 #ifndef ALBEDO_TEX
@@ -29,7 +34,6 @@ uniform samplerBuffer lights;
 #else
     uniform sampler2D roughness;
 #endif
-
 
 uniform vec3 camPos;
 
@@ -90,23 +94,28 @@ vec3 fresnelSchlick(float cosTheta, vec3 F0)
     return F0 + (1.0 - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
 }
 // ----------------------------------------------------------------------------
+vec3 fresnelSchlickRoughness(float cosTheta, vec3 F0, float roughness)
+{
+    return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+}   
+// ----------------------------------------------------------------------------
 void main()
 {		
     vec3 N = normalize(Normal);
     vec3 V = normalize(camPos - WorldPos);
+    vec3 R = reflect(-V, N); 
 
     // calculate reflectance at normal incidence; if dia-electric (like plastic) use F0 
     // of 0.04 and if it's a metal, use the albedo color as F0 (metallic workflow)    
     vec3 F0 = vec3(0.04); 
+    
 
 #ifndef ALBEDO_TEX
     vec3 _albedo = albedo;
 #else
-    vec3 _albedo = texture(albedo, TexCoords).rgb/300.0;
+    vec3 _albedo = texture(albedo, TexCoords).rgb;
 #endif
-
     F0 = mix(F0, _albedo, metallic);
-
     // reflectance equation
     vec3 Lo = vec3(0.0);
     for(int i = 0; i < lightNum; ++i) 
@@ -147,15 +156,28 @@ void main()
         Lo += (kD * _albedo / PI + specular) * radiance * NdotL;  // note that we already multiplied the BRDF by the Fresnel (kS) so we won't multiply by kS again
     }
 
-    // ambient lighting (note that the next IBL tutorial will replace 
-    // this ambient lighting with environment lighting).
-    vec3 ambient = vec3(0.03) * _albedo * ao;
-    vec3 color = ambient+Lo;
+    // ambient lighting (we now use IBL as the ambient term)
+    vec3 F = fresnelSchlickRoughness(max(dot(N, V), 0.0), F0, roughness);
+    
+    vec3 kS = F;
+    vec3 kD = 1.0 - kS;
+    kD *= 1.0 - metallic;	  
+    
+    vec3 irradiance = texture(irradianceMap, N).rgb;
+    vec3 diffuse      = irradiance * _albedo;
+    
+    // sample both the pre-filter map and the BRDF lut and combine them together as per the Split-Sum approximation to get the IBL specular part.
+    const float MAX_REFLECTION_LOD = 4.0;
+    vec3 prefilteredColor = textureLod(prefilterMap, R,  roughness * MAX_REFLECTION_LOD).rgb;    
+    vec2 brdf  = texture(lutMap, vec2(max(dot(N, V), 0.0), roughness)).rg;
+    vec3 specular = prefilteredColor * (F * brdf.x + brdf.y);
+
+    vec3 ambient = (kD * diffuse + specular) * ao;
+    
+    vec3 color = ambient + Lo;
     // HDR tonemapping
-    // color = _albedo/255;
     color = color / (color + vec3(2.0));
     // gamma correct
-    color = pow(color, vec3(1.0/2.2)); 
-    //color = getLight(0).color;
-    FragColor = vec4(color*100, 1.0);
+    color = pow(color, vec3(1.0/2.2));
+    FragColor = vec4(color, 1.0);
 }

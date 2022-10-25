@@ -1,20 +1,18 @@
 #ifndef RENDER_H
 #define RENDER_H
 
-#include <glad/glad.h>
-#include <iostream>
 #include <vector>
-
-#include <glm/glm.hpp>
-#include <GLFW/glfw3.h>
-#include <imgui/imgui.h>
-#include <imgui/imgui_impl_glfw.h>
-#include <imgui/imgui_impl_opengl3.h>
-//#include <ImGuizmo/ImGuizmo.h>
-#include "globel.h"
-#include "Log.h"
+#include <string>
 #include "Shader.h"
 #include "Scene.h"
+#include <GLFW/glfw3.h>
+
+enum class RenderType
+{
+    None = 0,
+    ForwardRender,
+    DefferedRender
+};
 
 class Render
 {
@@ -25,6 +23,7 @@ public:
     int nrRows = 7;
     int nrColumns = 7;
     float spacing = 2.5;
+    RenderType renderType;
 public:
     // 全局获取render
     static Render* get();

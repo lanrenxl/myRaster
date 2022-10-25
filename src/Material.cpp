@@ -5,9 +5,9 @@
 Material::Material()
 {
 	albedo = glm::vec3(1.0, 1.0, 1.0);
-	ao = 0.5f;
-	roughness = 1.0f;
-	metallic = 0.5f;
+	ao = 0.0f;
+	roughness = 0.0f;
+	metallic = 0.0f;
 	albedoTex = -1;
 	aoTex = -1;
 	roughnessTex = -1;

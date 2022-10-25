@@ -1,4 +1,12 @@
-#include<Render.h>
+#include <glad/glad.h>
+
+#include "Render.h"
+#include "DefferedScene.h"
+#include <imgui/imgui.h>
+#include <imgui/imgui_impl_glfw.h>
+#include <imgui/imgui_impl_opengl3.h>
+
+#include "Log.h"
 
 Render* Render::get()
 {
@@ -16,7 +24,19 @@ Render::Render()
     Log::Init();
     this->glfwWindowInit();
     this->gladContexInit();
-    //this->imguiInit();
+    this->renderType = RenderType::ForwardRender;
+    if (this->renderType == RenderType::ForwardRender)
+    {
+        this->scene = new ForwardScene();
+        this->scene->setHDRShader(make_shared<ShaderSource>("D:/document/CODE/vs2019/openGL/myRaster/src/shaders/hdr.vert", "D:/document/CODE/vs2019/openGL/myRaster/src/shaders/hdr.frag"));
+        this->scene->setModelShader(make_shared<ShaderSource>("D:/document/CODE/vs2019/openGL/myRaster/src/shaders/pbr.vert", "D:/document/CODE/vs2019/openGL/myRaster/src/shaders/pbr.frag"));
+    }
+    else if (this->renderType == RenderType::DefferedRender)
+    {
+        this->scene = new DefferedScene();
+        this->scene->setHDRShader(make_shared<ShaderSource>("D:/document/CODE/vs2019/openGL/myRaster/src/shaders/defferHDR.vert", "D:/document/CODE/vs2019/openGL/myRaster/src/shaders/defferHDR.frag"));
+        this->scene->setModelShader(make_shared<ShaderSource>("D:/document/CODE/vs2019/openGL/myRaster/src/shaders/defferGbuffer.vert", "D:/document/CODE/vs2019/openGL/myRaster/src/shaders/defferGbuffer.frag"));
+    }
     RT_INFO("Render init success");
 }
 
@@ -27,6 +47,7 @@ Render::~Render()
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
     // glfw: terminate, clearing all previously allocated GLFW resources.
+    delete scene;
     glfwTerminate();
 }
 
@@ -49,15 +70,13 @@ void Render::draw()
     processInput(window);
 
     // render
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     if (scene)
     {
-        // pass1 绘制天空球
-        this->scene->drawHDRMap();
-        // 绘制模型
-        this->scene->drawModel();
+        this->scene->update();
+        this->scene->draw();
     }
     else
         RT_ERROR("Scene NULL");
@@ -96,6 +115,7 @@ bool Render::glfwWindowInit()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_SAMPLES, 4);
+    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 #ifdef __APPLE__
@@ -161,6 +181,9 @@ void Render::imguiRender()
 
     // Create a window called "My First Tool", with a menu bar.
     ImGui::Begin("transform");
+    string fps = "FPS: " + to_string(1.0 / scene->deltaTime);
+    ImGui::Text(fps.c_str());
+    /*ImGui::Text("变换矩阵: ");
     if (ImGui::DragFloat3("roate", scene->hoverModel->transform.rotate, 1.0, -90.0, 90.0))
     {
         scene->hoverModel->dirty = true;
@@ -172,6 +195,31 @@ void Render::imguiRender()
     if (ImGui::DragFloat3("trans", &scene->hoverModel->transform.transV[0], 1.0, -90.0, 90.0))
     {
         scene->hoverModel->dirty = true;
+    }*/
+    ImGui::Text("material: ");
+    if (ImGui::SliderFloat("roughness", &scene->hoverModel->meshes[0]->materials.roughness, 0.f, 1.0f))
+    {
+        for (auto &item : scene->hoverModel->meshes)
+        {
+            item->materials.roughness = scene->hoverModel->meshes[0]->materials.roughness;
+        }
+        scene->hoverModel->meshes[0]->dirty = true;
+    }
+    if (ImGui::SliderFloat("metallic", &scene->hoverModel->meshes[0]->materials.metallic, 0.f, 1.0f))
+    {
+        for (auto& item : scene->hoverModel->meshes)
+        {
+            item->materials.metallic = scene->hoverModel->meshes[0]->materials.metallic;
+        }
+        scene->hoverModel->meshes[0]->dirty = true;
+    }
+    if (ImGui::SliderFloat("ao", &scene->hoverModel->meshes[0]->materials.ao, 0.f, 1.0f))
+    {
+        for (auto& item : scene->hoverModel->meshes)
+        {
+            item->materials.ao = scene->hoverModel->meshes[0]->materials.ao;
+        }
+        scene->hoverModel->meshes[0]->dirty = true;
     }
     ImGui::End();
 
